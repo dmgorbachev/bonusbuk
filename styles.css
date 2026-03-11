@@ -1095,6 +1095,201 @@ ul { list-style: none; }
 }
 
 /* ==========================================================================
+   BONUS SLIDER WIDGET (sidebar)
+   ========================================================================== */
+.bonus-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  margin-top: 24px;
+}
+.bonus-slider__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.45;
+  color: var(--color-text);
+  align-self: stretch;
+}
+
+.bonus-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.bonus-card__image-wrap {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+}
+.bonus-card__image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.bonus-card__badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px 2px 8px;
+  height: 16px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  font-family: 'TT Neoris', 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.5;
+  color: var(--color-bg-gray);
+  white-space: nowrap;
+}
+.bonus-card__body {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  gap: 16px;
+  padding: 8px 12px 12px;
+  margin-top: -16px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+}
+.bonus-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.bonus-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+.bonus-card__logo {
+  height: 24px;
+  width: auto;
+}
+.bonus-card__price {
+  font-family: 'TT Neoris', 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+.bonus-card__desc {
+  font-family: 'TT Neoris', 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--color-text);
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.bonus-card__actions {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  gap: 8px;
+}
+.bonus-card__code-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  padding: 8px 24px;
+  background: var(--color-bg-gray);
+  border-radius: 12px;
+  font-family: 'TT Neoris', 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #EBA516;
+  cursor: pointer;
+  border: none;
+  transition: background 0.15s;
+}
+.bonus-card__code-btn:hover {
+  background: #EAEAEA;
+}
+.bonus-card__code-btn svg {
+  flex-shrink: 0;
+}
+.bonus-card__cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 32px;
+  background: linear-gradient(137deg, #EBA516 0%, #E9B549 100%);
+  border-radius: 12px;
+  font-family: 'TT Neoris', 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+.bonus-card__cta-btn:hover {
+  opacity: 0.9;
+}
+
+.bonus-slider__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  gap: 10px;
+}
+.bonus-slider__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--color-bg-gray);
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(34, 34, 34, 0.2);
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+.bonus-slider__arrow:hover {
+  background: #EAEAEA;
+}
+.bonus-slider__dots {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.bonus-slider__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #D8D8D8;
+}
+.bonus-slider__dot--active {
+  background: var(--color-text);
+}
+
+/* ==========================================================================
    NEWS MOBILE
    ========================================================================== */
 .news-mobile {

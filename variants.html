@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рекламный виджет — 5 вариаций</title>
+  <link rel="stylesheet" href="variants.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="demo-header">
+    <h1 class="demo-header__title">AdWidget — 5 UI-вариаций</h1>
+    <p class="demo-header__subtitle">Горизонтальный слайдер рекламных виджетов. Одинаковый контент, разный лейаут.</p>
+  </header>
+
+  <div class="demo-slider">
+    <div class="demo-slider__track">
+
+      <!-- ========== ORIGINAL (base) ========== -->
+      <div class="demo-slide">
+        <span class="demo-slide__label">Original</span>
+        <section class="aw aw--original">
+          <div class="aw__card">
+            <div class="aw__media">
+              <img src="assets/bonus-bg.png" alt="" class="aw__media-img">
+              <span class="aw__badge">Реклама 18+</span>
+            </div>
+            <div class="aw__content">
+              <div class="aw__top">
+                <div class="aw__brand-row">
+                  <img src="assets/brand-logo.svg" alt="Winline" class="aw__logo">
+                  <span class="aw__price">28 000 ₽</span>
+                </div>
+                <p class="aw__desc">Приветственный фрибет от&nbsp;Winline —&nbsp;до 10 000 рублей и&nbsp;самый выгодный бонус! Максимальная высота в 4 строки</p>
+              </div>
+              <div class="aw__actions">
+                <button class="aw__code-btn">
+                  <span>NEWBONUS</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10.6667 1.33333H3.33333C2.6 1.33333 2 1.93333 2 2.66667V11.3333H3.33333V2.66667H10.6667V1.33333ZM12.6667 4H6C5.26667 4 4.66667 4.6 4.66667 5.33333V13.3333C4.66667 14.0667 5.26667 14.6667 6 14.6667H12.6667C13.4 14.6667 14 14.0667 14 13.3333V5.33333C14 4.6 13.4 4 12.6667 4ZM12.6667 13.3333H6V5.33333H12.6667V13.3333Z" fill="#EBA516"/></svg>
+                </button>
+                <a href="#" class="aw__cta">Получить бонус</a>
+              </div>
+            </div>
+          </div>
+          <div class="aw__nav">
+            <button class="aw__arrow" aria-label="Назад"><svg width="10" height="10" viewBox="0 0 6 9" fill="none"><path d="M5.054 8L1 4.5 5.054 1" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="aw__dots"><span class="aw__dot aw__dot--on"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span></div>
+            <button class="aw__arrow" aria-label="Вперёд"><svg width="10" height="10" viewBox="0 0 6 9" fill="none"><path d="M.946 1L5 4.5.946 8" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </section>
+      </div>
+
+      <!-- ========== VARIANT 1: Compact ========== -->
+      <div class="demo-slide">
+        <span class="demo-slide__label">Variant 1 — Compact</span>
+        <section class="aw aw--compact">
+          <div class="aw__card aw__card--hz">
+            <div class="aw__media aw__media--thumb">
+              <img src="assets/bonus-bg.png" alt="" class="aw__media-img">
+            </div>
+            <div class="aw__content aw__content--hz">
+              <div class="aw__brand-row">
+                <img src="assets/brand-logo.svg" alt="Winline" class="aw__logo aw__logo--sm">
+                <span class="aw__price aw__price--sm">28 000 ₽</span>
+              </div>
+              <p class="aw__desc aw__desc--2lines">Приветственный фрибет от&nbsp;Winline —&nbsp;до 10 000 рублей</p>
+              <div class="aw__actions aw__actions--row">
+                <button class="aw__code-btn aw__code-btn--pill">
+                  <span>NEWBONUS</span>
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M10.6667 1.33333H3.33333C2.6 1.33333 2 1.93333 2 2.66667V11.3333H3.33333V2.66667H10.6667V1.33333ZM12.6667 4H6C5.26667 4 4.66667 4.6 4.66667 5.33333V13.3333C4.66667 14.0667 5.26667 14.6667 6 14.6667H12.6667C13.4 14.6667 14 14.0667 14 13.3333V5.33333C14 4.6 13.4 4 12.6667 4ZM12.6667 13.3333H6V5.33333H12.6667V13.3333Z" fill="#EBA516"/></svg>
+                </button>
+                <a href="#" class="aw__cta aw__cta--sm">Получить</a>
+              </div>
+            </div>
+            <span class="aw__badge aw__badge--corner">Реклама 18+</span>
+          </div>
+          <div class="aw__nav">
+            <button class="aw__arrow" aria-label="Назад"><svg width="10" height="10" viewBox="0 0 6 9" fill="none"><path d="M5.054 8L1 4.5 5.054 1" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="aw__dots"><span class="aw__dot aw__dot--on"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span></div>
+            <button class="aw__arrow" aria-label="Вперёд"><svg width="10" height="10" viewBox="0 0 6 9" fill="none"><path d="M.946 1L5 4.5.946 8" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </section>
+      </div>
+
+      <!-- ========== VARIANT 2: Visual-first ========== -->
+      <div class="demo-slide">
+        <span class="demo-slide__label">Variant 2 — Visual-first</span>
+        <section class="aw aw--visual">
+          <div class="aw__card aw__card--hero">
+            <img src="assets/bonus-bg.png" alt="" class="aw__hero-bg">
+            <div class="aw__hero-overlay">
+              <div class="aw__hero-top">
+                <img src="assets/brand-logo.svg" alt="Winline" class="aw__logo aw__logo--light">
+                <span class="aw__badge">Реклама 18+</span>
+              </div>
+              <div class="aw__hero-bottom">
+                <span class="aw__price aw__price--hero">28 000 ₽</span>
+                <p class="aw__desc aw__desc--hero">Приветственный фрибет до&nbsp;10 000 рублей</p>
+                <a href="#" class="aw__cta aw__cta--ghost">Получить бонус</a>
+              </div>
+            </div>
+          </div>
+          <div class="aw__nav">
+            <button class="aw__arrow" aria-label="Назад"><svg width="10" height="10" viewBox="0 0 6 9" fill="none"><path d="M5.054 8L1 4.5 5.054 1" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="aw__dots"><span class="aw__dot aw__dot--on"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span></div>
+            <button class="aw__arrow" aria-label="Вперёд"><svg width="10" height="10" viewBox="0 0 6 9" fill="none"><path d="M.946 1L5 4.5.946 8" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </section>
+      </div>
+
+      <!-- ========== VARIANT 3: Editorial card ========== -->
+      <div class="demo-slide">
+        <span class="demo-slide__label">Variant 3 — Editorial card</span>
+        <section class="aw aw--editorial">
+          <div class="aw__card aw__card--edit">
+            <div class="aw__edit-header">
+              <div class="aw__edit-brand">
+                <img src="assets/bonus-bg.png" alt="" class="aw__edit-thumb">
+                <img src="assets/brand-logo.svg" alt="Winline" class="aw__logo">
+              </div>
+              <span class="aw__badge aw__badge--static">Реклама 18+</span>
+            </div>
+            <div class="aw__edit-divider"></div>
+            <div class="aw__edit-body">
+              <span class="aw__price aw__price--lg">28 000 ₽</span>
+              <p class="aw__desc aw__desc--edit">Приветственный фрибет от&nbsp;Winline —&nbsp;до 10 000 рублей и&nbsp;самый выгодный бонус! Максимальная высота в 4 строки</p>
+            </div>
+            <div class="aw__edit-footer">
+              <button class="aw__code-btn aw__code-btn--tag">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M10.6667 1.33333H3.33333C2.6 1.33333 2 1.93333 2 2.66667V11.3333H3.33333V2.66667H10.6667V1.33333ZM12.6667 4H6C5.26667 4 4.66667 4.6 4.66667 5.33333V13.3333C4.66667 14.0667 5.26667 14.6667 6 14.6667H12.6667C13.4 14.6667 14 14.0667 14 13.3333V5.33333C14 4.6 13.4 4 12.6667 4ZM12.6667 13.3333H6V5.33333H12.6667V13.3333Z" fill="#EBA516"/></svg>
+                <span>NEWBONUS</span>
+              </button>
+              <a href="#" class="aw__cta">Получить бонус</a>
+            </div>
+          </div>
+          <div class="aw__nav">
+            <button class="aw__arrow" aria-label="Назад"><svg width="10" height="10" viewBox="0 0 6 9" fill="none"><path d="M5.054 8L1 4.5 5.054 1" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="aw__dots"><span class="aw__dot aw__dot--on"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span></div>
+            <button class="aw__arrow" aria-label="Вперёд"><svg width="10" height="10" viewBox="0 0 6 9" fill="none"><path d="M.946 1L5 4.5.946 8" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </section>
+      </div>
+
+      <!-- ========== VARIANT 4: CTA-focused ========== -->
+      <div class="demo-slide">
+        <span class="demo-slide__label">Variant 4 — CTA-focused</span>
+        <section class="aw aw--cta-focus">
+          <div class="aw__card aw__card--cta">
+            <div class="aw__media aw__media--strip">
+              <img src="assets/bonus-bg.png" alt="" class="aw__media-img">
+              <span class="aw__badge">Реклама 18+</span>
+            </div>
+            <div class="aw__cta-body">
+              <div class="aw__brand-row">
+                <img src="assets/brand-logo.svg" alt="Winline" class="aw__logo">
+              </div>
+              <p class="aw__desc aw__desc--2lines">Приветственный фрибет от&nbsp;Winline —&nbsp;до 10 000 рублей</p>
+              <button class="aw__code-btn aw__code-btn--inline">
+                <span>NEWBONUS</span>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M10.6667 1.33333H3.33333C2.6 1.33333 2 1.93333 2 2.66667V11.3333H3.33333V2.66667H10.6667V1.33333ZM12.6667 4H6C5.26667 4 4.66667 4.6 4.66667 5.33333V13.3333C4.66667 14.0667 5.26667 14.6667 6 14.6667H12.6667C13.4 14.6667 14 14.0667 14 13.3333V5.33333C14 4.6 13.4 4 12.6667 4ZM12.6667 13.3333H6V5.33333H12.6667V13.3333Z" fill="#EBA516"/></svg>
+              </button>
+            </div>
+            <a href="#" class="aw__cta aw__cta--jumbo">
+              <span class="aw__cta-label">Получить бонус</span>
+              <span class="aw__cta-amount">28 000 ₽</span>
+            </a>
+          </div>
+          <div class="aw__nav">
+            <button class="aw__arrow" aria-label="Назад"><svg width="10" height="10" viewBox="0 0 6 9" fill="none"><path d="M5.054 8L1 4.5 5.054 1" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="aw__dots"><span class="aw__dot aw__dot--on"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span></div>
+            <button class="aw__arrow" aria-label="Вперёд"><svg width="10" height="10" viewBox="0 0 6 9" fill="none"><path d="M.946 1L5 4.5.946 8" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </section>
+      </div>
+
+      <!-- ========== VARIANT 5: Minimal ========== -->
+      <div class="demo-slide">
+        <span class="demo-slide__label">Variant 5 — Minimal</span>
+        <section class="aw aw--minimal">
+          <div class="aw__card aw__card--min">
+            <img src="assets/brand-logo.svg" alt="Winline" class="aw__logo aw__logo--center">
+            <span class="aw__price aw__price--xl">28 000 ₽</span>
+            <p class="aw__desc aw__desc--center">Приветственный фрибет до&nbsp;10 000 рублей</p>
+            <div class="aw__min-actions">
+              <a href="#" class="aw__cta">Получить бонус</a>
+              <button class="aw__code-btn aw__code-btn--subtle">
+                <span>NEWBONUS</span>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M10.6667 1.33333H3.33333C2.6 1.33333 2 1.93333 2 2.66667V11.3333H3.33333V2.66667H10.6667V1.33333ZM12.6667 4H6C5.26667 4 4.66667 4.6 4.66667 5.33333V13.3333C4.66667 14.0667 5.26667 14.6667 6 14.6667H12.6667C13.4 14.6667 14 14.0667 14 13.3333V5.33333C14 4.6 13.4 4 12.6667 4ZM12.6667 13.3333H6V5.33333H12.6667V13.3333Z" fill="#EBA516"/></svg>
+              </button>
+            </div>
+            <span class="aw__badge aw__badge--static">Реклама 18+</span>
+          </div>
+          <div class="aw__nav">
+            <button class="aw__arrow" aria-label="Назад"><svg width="10" height="10" viewBox="0 0 6 9" fill="none"><path d="M5.054 8L1 4.5 5.054 1" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="aw__dots"><span class="aw__dot aw__dot--on"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span><span class="aw__dot"></span></div>
+            <button class="aw__arrow" aria-label="Вперёд"><svg width="10" height="10" viewBox="0 0 6 9" fill="none"><path d="M.946 1L5 4.5.946 8" stroke="#222" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </section>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
