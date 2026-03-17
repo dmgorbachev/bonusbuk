@@ -1,0 +1,822 @@
+/* ==========================================================================
+   SHARED
+   ========================================================================== */
+.close {
+  position: absolute;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.15s;
+  color: #7f7f7f;
+}
+.close:hover { opacity: 0.6; }
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  transition: background 0.15s, color 0.15s;
+  box-sizing: border-box;
+}
+
+.disclaimer {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #9b9b9b;
+}
+
+/* ==========================================================================
+   SHOWCASE SLIDER
+   ========================================================================== */
+.showcase {
+  min-height: 100vh;
+  background: #1a1a1a;
+  padding: 32px 0;
+}
+
+.showcaseHeader {
+  text-align: center;
+  margin-bottom: 32px;
+  padding: 0 24px;
+}
+
+.showcaseTitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+  margin: 0 0 8px;
+}
+
+.showcaseSub {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+
+.track {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  padding: 24px 48px 48px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.slideLabel {
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #666;
+}
+
+.slideLabelNative  { color: #4ecdc4; }
+.slideLabelBranded { color: #ff6b6b; }
+.slideLabelCreative { color: #ffe66d; }
+
+.slideName {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+/* ==========================================================================
+   V01 — NATIVE: INLINE BAR
+   Horizontal strip, everything in one row
+   ========================================================================== */
+.v01 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 340px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  position: relative;
+}
+
+.v01 .close {
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.v01Logo { flex: 0 0 28px; }
+
+.v01Text {
+  flex: 1;
+  min-width: 0;
+}
+
+.v01Amount {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.v01Caption {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  color: #aaa;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.v01 .cta {
+  flex: 0 0 auto;
+  padding: 6px 16px;
+  border-radius: 8px;
+  background: #ff4848;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 24px;
+}
+.v01 .cta:hover { background: #e63e3e; }
+
+.v01 .disclaimer {
+  position: absolute;
+  bottom: -14px;
+  right: 0;
+  font-size: 7px;
+}
+
+/* ==========================================================================
+   V02 — NATIVE: FEED CARD
+   Vertical card, author-like header, clean white on dark
+   ========================================================================== */
+.v02 {
+  width: 240px;
+  background: #2a2a2a;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.v02Header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px 10px;
+}
+
+.v02BrandName {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ccc;
+  flex: 1;
+}
+
+.v02 .close {
+  position: static;
+  color: #666;
+}
+
+.v02Divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 0 16px;
+}
+
+.v02Body {
+  padding: 12px 16px 14px;
+}
+
+.v02Amount {
+  margin: 0 0 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+
+.v02Caption {
+  margin: 0 0 14px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  color: #999;
+  line-height: 1.4;
+}
+
+.v02 .cta {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+.v02 .cta:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.v02Footer {
+  text-align: center;
+  padding: 8px 16px 10px;
+}
+
+/* ==========================================================================
+   V03 — NATIVE: SIDEBAR MINIMAL
+   Narrow vertical, centered, text-link CTA
+   ========================================================================== */
+.v03 {
+  width: 148px;
+  padding: 20px 16px 14px;
+  text-align: center;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  position: relative;
+}
+
+.v03 .close {
+  top: 8px;
+  right: 8px;
+  color: #555;
+}
+
+.v03Logo { margin: 0 auto 12px; display: block; }
+
+.v03Amount {
+  margin: 0 0 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+.v03Caption {
+  margin: 0 0 14px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  color: #888;
+  line-height: 1.4;
+}
+
+.v03 .cta {
+  background: none;
+  color: #ff4848;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.v03 .cta:hover { color: #ff6868; }
+
+.v03 .disclaimer { margin-top: 10px; }
+
+/* ==========================================================================
+   V04 — BRANDED: HERO SPLIT
+   Two columns: red (logo+amount) | dark (text+CTA)
+   ========================================================================== */
+.v04 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 320px;
+  height: 140px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.v04 .close {
+  top: 8px;
+  right: 8px;
+  z-index: 1;
+  color: #ccc;
+}
+
+.v04Left {
+  background: #ff4848;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+.v04Amount {
+  margin: 0;
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.v04Right {
+  background: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  gap: 10px;
+}
+
+.v04Caption {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #bbb;
+  line-height: 1.4;
+}
+
+.v04 .cta {
+  padding: 7px 20px;
+  border-radius: 8px;
+  background: #ff4848;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  align-self: flex-start;
+}
+.v04 .cta:hover { background: #e63e3e; }
+
+.v04 .disclaimer {
+  position: absolute;
+  bottom: 6px;
+  right: 12px;
+}
+
+/* ==========================================================================
+   V05 — BRANDED: FULL BLEED RED
+   Solid red background, white text, inverted CTA
+   ========================================================================== */
+.v05 {
+  width: 200px;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff4848 0%, #d63030 100%);
+  border-radius: 16px;
+  position: relative;
+}
+
+.v05 .close {
+  top: 10px;
+  right: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.v05Amount {
+  margin: 8px 0 4px;
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff;
+  line-height: 1.15;
+}
+
+.v05Caption {
+  margin: 0 0 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+}
+
+.v05 .cta {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ff4848;
+}
+.v05 .cta:hover { background: #f0f0f0; }
+
+.v05 .disclaimer {
+  margin-top: 10px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ==========================================================================
+   V06 — BRANDED: RIBBON BANNER
+   Wide horizontal banner with red left accent stripe
+   ========================================================================== */
+.v06 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 360px;
+  background: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.v06Accent {
+  flex: 0 0 6px;
+  align-self: stretch;
+  background: #ff4848;
+}
+
+.v06Logo { flex: 0 0 36px; }
+
+.v06Body {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 0;
+}
+
+.v06Amount {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+.v06Caption {
+  margin: 2px 0 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  color: #999;
+}
+
+.v06Right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  padding: 0 14px 0 0;
+  flex: 0 0 auto;
+}
+
+.v06 .cta {
+  padding: 6px 20px;
+  border-radius: 8px;
+  background: #ff4848;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+.v06 .cta:hover { background: #e63e3e; }
+
+.v06 .close {
+  top: 6px;
+  right: 6px;
+  color: #555;
+}
+
+.v06 .disclaimer {
+  position: absolute;
+  bottom: 4px;
+  right: 14px;
+}
+
+/* ==========================================================================
+   V07 — CREATIVE: CIRCULAR HUB
+   Very rounded square, centered radial composition
+   ========================================================================== */
+.v07 {
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  background: radial-gradient(circle at 50% 30%, rgba(255, 72, 72, 0.25) 0%, rgba(34, 34, 34, 0.95) 70%);
+  border: 1px solid rgba(255, 72, 72, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  position: relative;
+}
+
+.v07 .close {
+  top: 16px;
+  right: 24px;
+  color: #666;
+}
+
+.v07Logo { margin-bottom: 6px; }
+
+.v07Amount {
+  margin: 0 0 2px;
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.v07Caption {
+  margin: 0 0 8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 9px;
+  color: #aaa;
+  line-height: 1.3;
+  max-width: 110px;
+}
+
+.v07 .cta {
+  padding: 5px 18px;
+  border-radius: 20px;
+  background: #ff4848;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+}
+.v07 .cta:hover { background: #e63e3e; }
+
+.v07 .disclaimer {
+  position: absolute;
+  bottom: 22px;
+  font-size: 7px;
+}
+
+/* ==========================================================================
+   V08 — CREATIVE: STACKED DEPTH
+   Layered card stack with shadow/offset effect
+   ========================================================================== */
+.v08Wrap {
+  position: relative;
+  width: 200px;
+  height: 190px;
+}
+
+.v08Layer1,
+.v08Layer2 {
+  position: absolute;
+  border-radius: 16px;
+}
+
+.v08Layer1 {
+  width: 200px;
+  height: 170px;
+  bottom: 0;
+  left: 10px;
+  background: rgba(255, 72, 72, 0.15);
+  transform: rotate(-2deg);
+}
+
+.v08Layer2 {
+  width: 200px;
+  height: 170px;
+  bottom: 6px;
+  left: 4px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transform: rotate(1deg);
+}
+
+.v08 {
+  position: relative;
+  z-index: 1;
+  width: 200px;
+  padding: 16px;
+  background: rgba(34, 34, 34, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.v08 .close {
+  top: 10px;
+  right: 10px;
+  color: #666;
+}
+
+.v08Header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.v08Amount {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.v08Caption {
+  margin: 0 0 14px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #999;
+  line-height: 1.4;
+}
+
+.v08 .cta {
+  width: 100%;
+  padding: 7px;
+  border-radius: 10px;
+  background: #ff4848;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+.v08 .cta:hover { background: #e63e3e; }
+
+.v08 .disclaimer {
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* ==========================================================================
+   V09 — CREATIVE: DIAGONAL SPLIT
+   clip-path diagonal: red top-left / dark bottom-right
+   ========================================================================== */
+.v09 {
+  width: 220px;
+  height: 160px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  background: #1e1e1e;
+}
+
+.v09Red {
+  position: absolute;
+  inset: 0;
+  background: #ff4848;
+  clip-path: polygon(0 0, 100% 0, 0 65%);
+}
+
+.v09Content {
+  position: relative;
+  z-index: 1;
+  padding: 14px 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.v09 .close {
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.v09Top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.v09Amount {
+  margin: 0;
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+.v09Bottom {
+  margin-top: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.v09Caption {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  color: #bbb;
+  line-height: 1.4;
+  max-width: 120px;
+}
+
+.v09 .cta {
+  padding: 6px 18px;
+  border-radius: 8px;
+  background: #ff4848;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+}
+.v09 .cta:hover { background: #e63e3e; }
+
+.v09 .disclaimer {
+  position: absolute;
+  bottom: 6px;
+  left: 16px;
+}
+
+/* ==========================================================================
+   V10 — CREATIVE: WIDE PILL
+   Horizontal pill shape, content flows left to right
+   ========================================================================== */
+.v10 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 380px;
+  padding: 12px 20px;
+  background: rgba(34, 34, 34, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 60px;
+  backdrop-filter: blur(12px);
+  position: relative;
+}
+
+.v10LogoWrap {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 72, 72, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.v10Amount {
+  flex: 0 0 auto;
+  margin: 0;
+  font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.v10Sep {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.1);
+  flex: 0 0 1px;
+}
+
+.v10Caption {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  color: #999;
+  line-height: 1.3;
+}
+
+.v10 .cta {
+  flex: 0 0 auto;
+  padding: 6px 18px;
+  border-radius: 20px;
+  background: #ff4848;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+.v10 .cta:hover { background: #e63e3e; }
+
+.v10 .close {
+  position: static;
+  flex: 0 0 16px;
+  color: #555;
+}
+
+.v10 .disclaimer {
+  position: absolute;
+  bottom: -12px;
+  right: 20px;
+  font-size: 7px;
+}
