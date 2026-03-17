@@ -1,12 +1,36 @@
+# Dependencies
 node_modules/
+package-lock.json
+
+# Build output
 dist/
 build/
+.vite/
+
+# Environment
 .env
 .env.*
+
+# OS files
 .DS_Store
 Thumbs.db
+*.swp
+*~
+
+# Logs
 *.log
 npm-debug.log*
+
+# Cache
 .cache/
 .parcel-cache/
-.vite/
+
+# Screenshots (generated, not source)
+screenshot-*.png
+
+# Editor
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
