@@ -1,0 +1,184 @@
+.overlay {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  animation: slideIn 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.widget {
+  position: relative;
+  width: 186px;
+  height: 198px;
+  background: rgba(34, 34, 34, 0.85);
+  border: 1px solid #9b9b9b;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  overflow: hidden;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close img {
+  width: 16px;
+  height: 16px;
+}
+
+.logo {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 32px;
+  height: 32px;
+}
+
+.amount {
+  position: absolute;
+  top: 58px;
+  left: 16px;
+  width: 154px;
+  margin: 0;
+  font-family: 'TT Neoris', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.333;
+  color: #ffffff;
+}
+
+.caption {
+  position: absolute;
+  top: 86px;
+  left: 16px;
+  width: 154px;
+  margin: 0;
+  font-family: 'TT Neoris', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.333;
+  color: #ffffff;
+}
+
+.cta {
+  position: absolute;
+  top: 134px;
+  left: 16px;
+  width: 154px;
+  height: auto;
+  padding: 4px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #ff4848;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-family: 'TT Neoris', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.714;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background 0.15s;
+  box-sizing: border-box;
+}
+
+.cta:hover {
+  background: #e63e3e;
+}
+
+.disclaimer {
+  position: absolute;
+  top: 174px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  font-family: 'TT Neoris', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #9b9b9b;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .overlay {
+    bottom: 12px;
+    right: 12px;
+  }
+
+  .widget {
+    width: 164px;
+    height: 176px;
+    border-radius: 12px;
+  }
+
+  .close {
+    top: 8px;
+    right: 8px;
+  }
+
+  .logo {
+    top: 12px;
+    left: 12px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .amount {
+    top: 50px;
+    left: 12px;
+    width: 140px;
+    font-size: 16px;
+  }
+
+  .caption {
+    top: 74px;
+    left: 12px;
+    width: 140px;
+    font-size: 11px;
+  }
+
+  .cta {
+    top: 118px;
+    left: 12px;
+    width: 140px;
+    font-size: 13px;
+  }
+
+  .disclaimer {
+    top: 154px;
+    font-size: 7px;
+  }
+}
